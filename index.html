@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Menu</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <img src="images/susLogo.png" alt="" />
+      </div>
+      <div class="menu" onclick="myFunction();">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <span>Home</span>
+        <span>About</span>
+        <span>Log in</span>
+        <span>Register</span>
+      </nav>
+    </header>
+    <div id="content">hi</div>
+    <script>
+      function myFunction() {
+        document.querySelector("nav").classList.toggle("active");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/e21576d233.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
