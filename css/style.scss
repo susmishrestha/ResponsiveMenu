@@ -2,15 +2,24 @@
   font-family: "Acme", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+body {
+  background-color: #eee;
+}
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   align-items: center;
   color: white;
-  display: flex;
-  justify-content: space-between;
   background-color: rgb(8, 62, 110);
   padding: 1rem;
   .logo {
@@ -55,4 +64,52 @@ header {
 
 #content {
   padding-top: 3.9rem;
+}
+
+input {
+  width: 20rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-align: right;
+  button {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    color: white;
+
+    &.btn-blue {
+      background-color: rgb(8, 62, 110);
+    }
+    &.btn-red {
+      background-color: red;
+    }
+  }
+}
+
+.completely-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  .cardHeader {
+    background-color: rgb(8, 62, 110);
+    color: white;
+    padding: 1.25rem 0.75rem;
+    border-radius: 0.2rem;
+    transform: translateY(-2.2rem);
+    font-size: 1.2rem;
+  }
 }

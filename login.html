@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="flex jcsb">
       <div class="logo">
         <img src="images/susLogo.png" alt="" />
       </div>
@@ -32,7 +32,21 @@
         <span>Register</span>
       </nav>
     </header>
-    <div id="content">hi</div>
+    <div id="content">
+      <div class="completely-center card">
+        <div class="cardHeader">
+          Log In
+        </div>
+        <form action="">
+          <input type="text" placeholder="Username" /> <br />
+          <input type="password" placeholder="Password" /> <br />
+          <br />
+          <div class="btn">
+            <button class="btn-blue">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script>
       function myFunction() {
         document.querySelector("nav").classList.toggle("active");
